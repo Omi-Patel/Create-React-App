@@ -1,13 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bruno+Ace&family=Bruno+Ace+SC&family=Kanit:wght@400;700&family=Pathway+Extreme&family=Piazzolla:wght@200;300;400;900&family=Prompt:wght@500&family=Shantell+Sans:wght@500&family=Ubuntu:wght@400;700&family=Unbounded:wght@500&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(0, 0, 0);
+
+  font-family: 'Aboreto', cursive;
+font-family: 'Bruno Ace', cursive;
+font-family: 'Bruno Ace SC', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Pathway Extreme', sans-serif;
+font-family: 'Piazzolla', serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Shantell Sans', cursive;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Unbounded', cursive;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.mainDiv{
+  background-color: aqua;
+  width: 500px;
+  margin: 55px auto;
+  margin-bottom: 60px;
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 10px rgb(68, 0, 255);
+}
+.mainDiv button{
+  font-size: 40px;
+  /* font-weight: bolder; */
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  border: none;
+  background-color: blueviolet;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.mainDiv h1{
+  font-size: 56px;
+  background-color: rgba(255, 255, 0, 0.425);
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(248, 47, 255);
+}
+
+h2{
+  text-align: center;
+  margin-top: 50px;
+  font-size: xx-large;
+  color: azure;
+  padding: 5px;
+  text-shadow: 0px 0px 8px greenyellow;
+}
+
+
+/* Showing Time */
+.showTime{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  color: antiquewhite;
+  text-align: center;
+  background-color: rgba(19, 116, 243, 0.767);
+  width: 820px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 5px;
+}
+.showTime span{
+  color: rgba(255, 12, 12, 0.993);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  /* height: 50px; */
+}
+.showTime button{
+  background-color: greenyellow;
+  border: none;
+  width: 150px;
+  height: 60px;
+  margin: 4px;
+ 
+  cursor: pointer;
+  border: 2px solid blue;
+  border-radius: 10px;
+font-family: 'Ubuntu', sans-serif;
+font-weight: bolder;
+font-size: 20px;
+}
+
+@media (max-width : 768px){
+  .mainDiv{
+    width: 350px;
+    margin: 50px auto;
+  }
+  .showTime{
+    width: 350px;
+  height: 160px;
+
+    flex-direction: column;
+    /* color: darkgray; */
+  }
+}
+
+/* Main Contaier */
+/* .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+} */
+
