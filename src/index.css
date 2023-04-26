@@ -117,12 +117,14 @@ font-size: 20px;
 }
 
 @media (max-width : 768px){
+ 
   .mainDiv{
-    width: 350px;
+    width: 330px;
     margin: 50px auto;
+    
   }
   .showTime{
-    width: 350px;
+    width: 330px;
   height: 160px;
 
     flex-direction: column;
