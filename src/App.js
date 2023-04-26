@@ -36,7 +36,7 @@ const App = () => {
 
 
   // Changing The Mode 
-  let color = "#0000";
+  let color = "#192734";
   const [bg, newBg] = useState(color);
   const [name, newName] = useState('Click To White Mode');
   const [newColor, txtColor] = useState('white');
@@ -52,7 +52,7 @@ const App = () => {
 
   // On Double Click Back To Normal
   const bgBack = () => {
-    newBg("#0000");
+    newBg("#192734");
     newName('Click To White Mode');
     txtColor('white');
     nColor('darkgray');
@@ -60,15 +60,15 @@ const App = () => {
 
   return (
     <>
-      <div style={ { backgroundColor: bg} }>
-        <h2 style={ { color: newColor} }>Increament / Decreament The Value</h2>
+      <div style={{ backgroundColor: bg }}>
 
         <div className='container'>
+          <h2 style={{ color: newColor }}>Increament / Decreament The Value</h2>
 
           {/* Show Time */}
           <div>
             <h1 className='showTime'>
-              Current Time : <span style={ { backgroundColor: tcolor} }>{curTime}</span>
+              Current Time : <span style={{ backgroundColor: tcolor }}>{curTime}</span>
               <button onClick={bgDark} onDoubleClick={bgBack}> {name} </button>
             </h1>
           </div>
