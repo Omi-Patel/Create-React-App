@@ -10,13 +10,24 @@ const App = () => {
 
   // let count = 0;
   const IncVal = () => {
+    // let x = Math.floor(Math.random() * 10);
     newVal(count + 1);
+    
+    // newVal(x);
     // console.log("Clicked " + count++);
-  };
+
+  }; 
+  
+
 
   const DeVal = () => {
-    newVal(count - 1);
-    // console.log("Clicked " + count++);
+    if (count > 0) {
+      newVal(count - 1);
+      // console.log("Clicked " + count++);
+    } else {
+      alert('Sorry!, Zero Limit Reached');
+      newVal(0);
+    }
   };
 
 
