@@ -79,6 +79,14 @@ h2{
   text-shadow: 0px 0px 8px greenyellow;
 }
 
+.btn{
+  display: flex;
+}
+
+.btn .sinbtn:hover{
+  background-color: rgb(0, 102, 255);
+}
+
 
 /* Showing Time */
 .showTime{

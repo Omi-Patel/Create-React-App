@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './index.css';
 
 
 
@@ -12,12 +13,12 @@ const App = () => {
   const IncVal = () => {
     // let x = Math.floor(Math.random() * 10);
     newVal(count + 1);
-    
+
     // newVal(x);
     // console.log("Clicked " + count++);
 
-  }; 
-  
+  };
+
 
 
   const DeVal = () => {
@@ -87,8 +88,10 @@ const App = () => {
           {/* Show Content */}
           <div className='mainDiv'>
             <h1>{count}</h1>
-            <button onClick={IncVal}>+</button>
-            <button onClick={DeVal}>-</button>
+            <div className='btn'>
+              <button className='sinbtn' onClick={IncVal}>+</button>
+              <button className='sinbtn' onClick={DeVal}>-</button>
+            </div>
           </div>
 
         </div>
