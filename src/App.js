@@ -55,6 +55,7 @@ const App = () => {
   const [tcolor, nColor] = useState('darkgray');
 
 
+
   const bgDark = () => {
     newBg("#fff");
     newName('Doouble Click To Dark Mode');
@@ -69,6 +70,12 @@ const App = () => {
     txtColor('white');
     nColor('darkgray');
   }
+
+
+  // useEffect
+  // useEffect(()=>{
+  //   alert("I am Clicked");
+  // }, [count]);
 
   return (
     <>
